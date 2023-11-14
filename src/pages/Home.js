@@ -18,7 +18,7 @@ const Home = () => {
         </p>
 
         <button className="absolute end rounded-full ... bg-transparent hover:bg-black-500 text-yellow-900 font-semibold hover:text-white py-3 px-6 border border-yellow-900 hover:border-transparent rounded absolute bottom-60 left-80 ...">
-          login
+          Register
         </button>
       </div>
     </div>

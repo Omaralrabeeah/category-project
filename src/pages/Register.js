@@ -18,7 +18,11 @@ const Register = () => {
 
   return (
     <div className="w-screen h-screen bg-yellow-500 flex justify-center items-center">
-      <div className="w-[50%] h-[50%] border-[2px] border-brown-500 rounded-md flex flex-col justify-center items-center gap-5">
+      <div className="w-[50%] h-[50%] relative border-[2px] border-brown-500 rounded-md flex flex-col justify-center items-center gap-5 z-[10]">
+        <img
+          src="https://img.freepik.com/fotos-premium/conceito-de-batata-frita-de-lixo-e-fast-food_185193-137884.jpg"
+          className="absolute h-full w-full z-[-1] "
+        />
         <h1 className="text-[30px] py-6"> Register</h1>
         <input
           name="username"
@@ -50,7 +54,7 @@ const Register = () => {
         ) : (
           <button
             onClick={mutate}
-            className="py-3 border border-black rounded-md border-[2px]"
+            className="py-3 border border-black rounded-md border-[2px] h-[20%] rounded-full bg-transparent hover:bg-black-500 text-black-500 font-semibold hover:text-white py-3"
           >
             Register
           </button>
