@@ -1,12 +1,14 @@
 import { useMutation } from "@tanstack/react-query";
 import React, { useState } from "react";
 import { register } from "../api/auth";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [userInfo, setUserInfo] = useState({});
+  const navigate = useNavigate();
   const handleChange = (e) => {
     if (e.target.name == "image") {
-      setUserInfo({ ...userInfo, [e.target.name]: e.target.file[0] });
+      setUserInfo({ ...userInfo, [e.target.name]: e.target.files[0] });
     } else {
       setUserInfo({ ...userInfo, [e.target.name]: e.target.value });
     }
@@ -14,13 +16,17 @@ const Register = () => {
   const { mutate, isPending, error } = useMutation({
     mutationKey: ["register"],
     mutationFn: () => register(userInfo),
+    onSuccess: () => {
+      navigate("/profile");
+    },
   });
 
   return (
-    <div className="w-screen h-screen bg-yellow-500 flex justify-center items-center">
+    <div className="w-screen h-screen bg-yellow-200 flex justify-center items-center">
+      <img src="https://mytastycurry.com/wp-content/uploads/2018/06/Omelette-roll.jpg "></img>
       <div className="w-[50%] h-[50%] relative border-[2px] border-brown-500 rounded-md flex flex-col justify-center items-center gap-5 z-[10]">
         <img
-          src="https://img.freepik.com/fotos-premium/conceito-de-batata-frita-de-lixo-e-fast-food_185193-137884.jpg"
+          src="https://www.everydaycheapskate.com/wp-content/uploads/117517953_s-833x556.jpg"
           className="absolute h-full w-full z-[-1] "
         />
         <h1 className="text-[30px] py-6"> Register</h1>
