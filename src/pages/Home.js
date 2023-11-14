@@ -13,7 +13,6 @@ const Home = () => {
           Foodies
         </p>
         <p className="absolute top-65 text-3xl z-10 flex font-mono    text-base/6 ... text-orange-900 items-center  antialiased ... left-9  font-bold">
-          {" "}
           Online, easy and beautiful.
         </p>
 
