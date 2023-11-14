@@ -28,14 +28,16 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen flex items-center justify-center absolute inset-0 z-[-1]">
-      <div className="max-w-md w-full px-6 py-8 bg-gray-800 rounded-md shadow-md">
-        <h2 className="text-3xl text-white font-semibold mb-6">Login</h2>
+    <div className="bg-yellow-200 min-h-screen flex items-center justify-center absolute inset-0 z-[-1] flex flex-row">
+      <div className="h-screen max-w-md w-full px-6 py-8 bg-gray-800 rounded-md shadow-md bg-blue-200 ">
+        <h2 className="text-3xl text-white font-semibold mb-6 h-56 grid grid-cols-3 gap-4 content-end">
+          Login
+        </h2>
         <form onSubmit={handleFormSubmit}>
           <div className="mb-4">
             <label
               htmlFor="username"
-              className="block text-white text-sm font-medium mb-2"
+              className="block text-white text-sm font-medium mb-2 "
             >
               username
             </label>
@@ -44,7 +46,7 @@ const Login = () => {
               name="username"
               id="username"
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 "
               required
             />
           </div>

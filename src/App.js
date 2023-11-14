@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { useEffect, useState } from "react";
 import { checkToken } from "./api/auth";
 import UserContext from "./context/UserContext";
+import CreateRecipe from "./pages/CreateRecipe";
 function App() {
   const [user, setUser] = useState(false);
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/register" Component={Register} />
           <Route path="/login" Component={Login} />
           <Route path="/" Component={Home} />
+          <Route path="/create-recipe" Component={CreateRecipe} />
         </Routes>
       </div>
     </UserContext.Provider>
