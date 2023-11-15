@@ -16,9 +16,4 @@ const uppdateRecipe = async () => {
   return res.data;
 };
 
-export default {
-  getAllRecipe,
-  CreateRecipe,
-  getRecipe,
-  uppdateRecipe,
-};
+export { getAllRecipe, CreateRecipe, getRecipe, uppdateRecipe };

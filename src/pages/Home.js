@@ -16,10 +16,10 @@ const Home = () => {
           Online, easy and beautiful.
         </p>
 
-        <button className="absolute end rounded-full ... bg-transparent hover:bg-black-500 text-yellow-900 font-semibold hover:text-white py-3 px-6 border border-yellow-900 hover:border-transparent rounded absolute bottom-40 right-60 ...">
+        <button className="absolute end rounded-full ... bg-transparent hover:bg-black-500 text-yellow-900 font-semibold hover:text-red-300 py-3 px-6 border border-yellow-900 hover:border-transparent rounded absolute bottom-40 right-60 ...">
           login
         </button>
-        <button className="absolute end rounded-full ... bg-transparent hover:bg-black-500 text-yellow-900 font-semibold hover:text-white py-3 px-6 border border-yellow-900 hover:border-transparent rounded absolute bottom-40 right-20 ...">
+        <button className="absolute end rounded-full ... bg-transparent hover:bg-black-500 text-yellow-900 font-semibold hover:text-red-300 py-3 px-6 border border-yellow-900 hover:border-transparent rounded absolute bottom-40 right-20 ...">
           Register
         </button>
       </div>
