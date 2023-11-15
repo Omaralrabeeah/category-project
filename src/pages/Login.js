@@ -28,16 +28,16 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-yellow-200 min-h-screen flex items-center justify-center absolute inset-0 z-[-1] flex flex-row">
-      <div className="h-screen max-w-md w-full px-6 py-8 bg-gray-800 rounded-md shadow-md bg-blue-200 ">
-        <h2 className="text-3xl text-white font-semibold mb-6 h-56 grid grid-cols-3 gap-4 content-end">
+    <div className=" min-h-screen flex items-center justify-center absolute inset-0 z-[-1]  flex-row ">
+      <div className="h-screen max-w-md w-full px-6 py-8  rounded-md shadow-md  ">
+        <h2 className="text-3xl text-black font-semibold mb-6 h-56 grid grid-cols-3 gap-4 content-end">
           Login
         </h2>
         <form onSubmit={handleFormSubmit}>
           <div className="mb-4">
             <label
               htmlFor="username"
-              className="block text-white text-sm font-medium mb-2 "
+              className="block text-black text-sm font-medium mb-2 "
             >
               username
             </label>
@@ -53,7 +53,7 @@ const Login = () => {
           <div className="mb-6">
             <label
               htmlFor="password"
-              className="block text-white text-sm font-medium mb-2"
+              className="block text-black text-sm font-medium mb-2"
             >
               Password
             </label>
@@ -69,7 +69,7 @@ const Login = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+              className="px-4 py-2 bg-blue-500 text-black rounded-md hover:bg-blue-600 transition-colors"
             >
               Login
             </button>
